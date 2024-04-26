@@ -1,0 +1,27 @@
+Vivero El Otoño
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="row mb-2" *ngFor="let planta of plantas">
+        {{ planta.id }}
+      </div>
+    </div>
+    <div class="col">
+      <div class="row mb-2" *ngFor="let planta of plantas">
+        {{ planta.nombre_comun }}
+      </div>
+    </div>
+    <div class="col">
+      <div class="row mb-2" *ngFor="let planta of plantas">
+        {{ planta.tipo }}
+      </div>
+    </div>
+    <div class="col">
+      <div class="row mb-2" *ngFor="let planta of plantas">
+        {{ planta.clima }}
+      </div>
+    </div>
+  </div>
+</div>
+<p>Total plantas de interior: {{ contarInteriores() }}</p>
+<p>Total plantas de exterior: {{ contarExteriores() }}</p>
